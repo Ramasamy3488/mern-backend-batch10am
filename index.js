@@ -23,6 +23,7 @@ app.use(cors({
 }));
 
 
+
 app.use(express.json());
 
 const traineesRoute = require('./routes/trainees-route')
@@ -111,5 +112,4 @@ app.listen(process.env.PORT, () => {
 // // Start server
 // const PORT = 3000;
 // app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
-
 

@@ -37,8 +37,8 @@ async function addATrainee(req, res) {
 
     const trainee = new TraineesModel(req.body);
     await trainee.save();
-
     res.json({ message: "Trainee Added Successfully!" });
+    
   } catch (err) {
     const errorList = [];
 
